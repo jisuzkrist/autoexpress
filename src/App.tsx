@@ -1,6 +1,6 @@
 // Libraries
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 // (end of) Libraries
 
 // Components
@@ -14,9 +14,11 @@ import "./scss/app.scss";
 export const App: React.FC = () => {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<MainLayout />}></Route>
-      </Routes>
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout />}></Route>
+        </Routes>
+      </HashRouter>
     </div>
   );
 };
