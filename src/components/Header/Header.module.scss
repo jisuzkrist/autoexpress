@@ -1,21 +1,46 @@
+@import "../../scss/mixins";
+
 .root {
   background-image: url(../../assets/img/bg/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  min-height: 700px; // Image height
 
-  // .top {
-  //   .logo {
+  min-height: 700px;
+  color: #ffffff;
 
-  //   }
+  padding: 47px 0 0;
 
-  //   .phone {
+  .top {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
 
-  //   }
-  // }
+    .phone {
+      font-size: 36px;
+      line-height: 53px;
+      font-weight: 400;
+    }
+  }
 
   .content {
-    background-color: coral;
+    position: relative;
+    padding: 105px 0 0;
+
+    .text {
+      margin: 30px 0;
+      max-width: 762px;
+    }
+
+    .social {
+      padding: 70px 0 20px 66px;
+      width: 250px;
+    }
+
+    .decorCar {
+      position: absolute;
+      top: 338px;
+      right: 0;
+    }
   }
 }

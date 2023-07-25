@@ -43,34 +43,36 @@ export const Header: React.FC = () => {
             Подбор, покупка, доставка, растаможка, ремонт, оформление по договору
           </p>
 
-          <div className="button" title="Консультация эксперта">
-            <a href="#">Консультация эксперта</a>
+          <a className="button" title="Консультация эксперта" href="#">
+            Консультация эксперта
+          </a>
+
+          <div className={styles.social}>
+            <ul className="social-links">
+              <li>
+                <a href="https://www.instagram.com/" title="Instagram">
+                  <img width="25" height="25" src={socialInstagram} alt="instagram icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.org" title="Telegram">
+                  <img width="25" height="19" src={socialTelegram} alt="telegram icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.whatsapp.com/" title="WhatsApp">
+                  <img width="25" height="25" src={socialWhatsapp} alt="whatsApp icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" title="Facebook">
+                  <img width="14" height="25" src={socialFacebook} alt="facebook icon" />
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <ul className="social-links">
-            <li>
-              <a href="https://www.instagram.com/" title="Instagram">
-                <img width="25" height="25" src={socialInstagram} alt="instagram icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://telegram.org" title="Telegram">
-                <img width="25" height="19" src={socialTelegram} alt="telegram icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.whatsapp.com/" title="WhatsApp">
-                <img width="25" height="25" src={socialWhatsapp} alt="whatsApp icon" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/" title="Facebook">
-                <img width="14" height="25" src={socialFacebook} alt="facebook icon" />
-              </a>
-            </li>
-          </ul>
-
-          <img width="814" height="462" src={decorCar} alt="car" />
+          <img className={styles.decorCar} width="814" height="462" src={decorCar} alt="car" />
         </div>
       </div>
     </div>

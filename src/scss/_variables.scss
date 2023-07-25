@@ -1,13 +1,17 @@
 $bgcolor: #ffffff;
-$color: #000000;
+$color: #2c2b2b;
 $min-width: 320px;
 
+$container-width: 1200px;
+
 // Default font
-$font-family: "Inter", sans-serif;
+$font-family: "Oswald", sans-serif;
+$font-weight: 300;
+$font-size: 18px;
+$line-height: 27px;
 // (end of) Default font
 
 // Breakpoints
-$min-width: 320px;
 $mw: 1080;
 $xs: 575.98;
 $sm: 767.98;

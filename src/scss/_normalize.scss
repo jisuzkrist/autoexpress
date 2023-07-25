@@ -23,15 +23,6 @@
   outline: none;
 }
 
-a {
-  text-decoration: none;
-
-  &:focus,
-  &:active {
-    outline: none;
-  }
-}
-
 article,
 aside,
 details,
@@ -50,22 +41,28 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
   min-width: $min-width;
   position: relative;
-  color: $color;
 }
 
 body {
-  font-size: 100%;
+  background-color: $bgcolor;
+
+  color: $color;
   line-height: 1;
-  font-size: 14px;
+  line-height: $line-height;
   font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 100%;
+  font-size: $font-size;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: $bgcolor;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
 }
 
 h1,
@@ -84,6 +81,17 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 input,
@@ -108,11 +116,6 @@ button {
     padding: 0;
     border: 0;
   }
-}
-
-button a,
-a:visited {
-  text-decoration: none;
 }
 
 blockquote,

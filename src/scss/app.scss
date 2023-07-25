@@ -1,8 +1,5 @@
 @import "./normalize";
-
-body {
-  background-color: lightpink;
-}
+@import "./mixins";
 
 .button,
 .motto,
@@ -11,15 +8,44 @@ body {
   text-transform: uppercase;
 }
 
-// .button {
-
-// }
-
-.container {
-  background-color: yellowgreen;
-  width: 1200px;
+.title {
+  font-size: 72px;
+  line-height: 107px;
 }
 
-// .social-links {
+.motto {
+  font-size: 36px;
+  line-height: 53px;
+}
 
-// }
+.button {
+  @include flexbox();
+  justify-content: center;
+  align-items: center;
+  background-color: #5a0d67;
+  width: 250px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 21px;
+  transition: all 0.5s;
+
+  &:hover {
+    color: #5a0d67;
+    background-color: #ffffff;
+  }
+}
+
+.social-links {
+  width: 125px;
+  @include flexbox();
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    padding-right: 10px;
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}
