@@ -1,5 +1,9 @@
 .root {
-  background-color: lightblue;
+  background-image: url(../../assets/img/bg/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  min-height: 700px; // Image height
 
   // .top {
   //   .logo {
