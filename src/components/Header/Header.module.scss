@@ -1,13 +1,15 @@
+@import "../../scss/variables";
 @import "../../scss/mixins";
 
 .root {
+  background-color: $dark-purple;
   background-image: url(../../assets/img/bg/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 
   min-height: 700px;
-  color: #ffffff;
+  color: $white;
 
   padding: 47px 0 0;
 

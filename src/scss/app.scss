@@ -22,7 +22,7 @@
   @include flexbox();
   justify-content: center;
   align-items: center;
-  background-color: #5a0d67;
+  background-color: $purple;
   width: 250px;
   height: 50px;
   font-size: 14px;
@@ -30,8 +30,8 @@
   transition: all 0.5s;
 
   &:hover {
-    color: #5a0d67;
-    background-color: #ffffff;
+    color: $purple;
+    background-color: $white;
   }
 }
 
