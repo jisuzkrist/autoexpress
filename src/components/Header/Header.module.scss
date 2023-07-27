@@ -13,6 +13,11 @@
 
   padding: 47px 0 0;
 
+  a:focus,
+  a:active {
+    outline: 1px solid $white;
+  }
+
   .top {
     @include flexbox();
     justify-content: space-between;

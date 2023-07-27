@@ -80,6 +80,7 @@ ul li {
 }
 
 img {
+  display: inline-block;
   vertical-align: top;
 }
 
@@ -87,11 +88,6 @@ a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-
-  &:focus,
-  &:active {
-    outline: none;
-  }
 }
 
 input,

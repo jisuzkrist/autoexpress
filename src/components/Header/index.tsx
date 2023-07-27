@@ -21,17 +21,13 @@ export const Header: React.FC = () => {
     <div className={styles.root}>
       <div className="container">
         <div className={styles.top}>
-          <Link to="/">
-            <div className={styles.logo}>
-              <img width="197" src={logo} alt="logo" title="На главную" />
-            </div>
+          <Link to="/" className={styles.logo}>
+            <img width="197" src={logo} alt="logo" title="На главную" />
           </Link>
 
-          <div className={styles.phone}>
-            <a href="tel:+380505556677" title="Позвонить">
-              +38 (050) 555 66 77
-            </a>
-          </div>
+          <a className={styles.phone} href="tel:+380505556677" title="Позвонить">
+            +38 (050) 555 66 77
+          </a>
         </div>
 
         <div className={styles.content}>

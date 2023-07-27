@@ -33,6 +33,13 @@
     color: $purple;
     background-color: $white;
   }
+
+  &:focus,
+  &:active {
+    outline: none;
+    color: $purple;
+    background-color: $white;
+  }
 }
 
 .social-links {
