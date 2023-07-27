@@ -50,22 +50,34 @@ export const Header: React.FC = () => {
           <div className={styles.social}>
             <ul className="social-links">
               <li>
-                <a href="https://www.instagram.com/" title="Instagram">
+                <a
+                  href="https://www.instagram.com"
+                  title="Instagram"
+                  target="_blank"
+                  rel="noreferrer">
                   <img width="25" height="25" src={socialInstagram} alt="instagram icon" />
                 </a>
               </li>
               <li>
-                <a href="https://telegram.org" title="Telegram">
+                <a href="https://telegram.org" title="Telegram" target="_blank" rel="noreferrer">
                   <img width="25" height="19" src={socialTelegram} alt="telegram icon" />
                 </a>
               </li>
               <li>
-                <a href="https://www.whatsapp.com/" title="WhatsApp">
-                  <img width="25" height="25" src={socialWhatsapp} alt="whatsApp icon" />
+                <a
+                  href="https://www.whatsapp.com"
+                  title="WhatsApp"
+                  target="_blank"
+                  rel="noreferrer">
+                  <img width="25" height="25" src={socialWhatsapp} alt="whatsapp icon" />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/" title="Facebook">
+                <a
+                  href="https://www.facebook.com"
+                  title="Facebook"
+                  target="_blank"
+                  rel="noreferrer">
                   <img width="14" height="25" src={socialFacebook} alt="facebook icon" />
                 </a>
               </li>
