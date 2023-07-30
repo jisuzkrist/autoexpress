@@ -1,0 +1,82 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.root {
+  padding: 300px 0 0;
+
+  .inner {
+    margin: 50px 0 100px;
+    display: flex;
+
+    .content {
+      margin: 0 95px 0 0;
+      flex-basis: 50%;
+
+      &Box {
+        margin: 0 0 69px;
+
+        &:last-of-type {
+          margin: 0 0 50px;
+        }
+
+        .textBox {
+          margin: 12px 0 0;
+
+          .text {
+            margin: 0 0 12px;
+
+            &:last-of-type {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .servicesList {
+      flex-basis: 50%;
+      counter-reset: servicesCounter;
+
+      .item {
+        counter-increment: servicesCounter;
+        outline: 1px solid $grey;
+        margin: 0 0 12px;
+        padding: 10px 19px 9px 113px;
+        position: relative;
+        width: 90%;
+        transition: all 0.5s;
+
+        &:last-of-type {
+          margin: 0;
+        }
+
+        &::before {
+          content: "0" counter(servicesCounter);
+          position: absolute;
+          left: 20px;
+          font-weight: 400;
+          font-size: 36px;
+          line-height: 53px;
+          color: $grey;
+          transform: rotate(-90deg);
+          transition: all 0.5s;
+        }
+
+        &:hover {
+          outline: 2px solid $purple;
+          width: 100%;
+
+          &::before,
+          .itemTitle {
+            color: $purple;
+          }
+        }
+
+        .itemTitle {
+          @include itemTitleFont;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}

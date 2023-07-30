@@ -5,12 +5,14 @@ import { Outlet } from "react-router-dom";
 
 // Components
 import { Header } from "../components/Header";
+import { Services } from "../components/Services";
 // (end of) Components
 
 const MainLayout: React.FC = () => {
   return (
     <div>
       <Header />
+      <Services />
       <Outlet />
     </div>
   );

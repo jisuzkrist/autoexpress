@@ -18,7 +18,7 @@ import styles from "./Header.module.scss";
 
 export const Header: React.FC = () => {
   return (
-    <div className={styles.root}>
+    <header className={styles.root}>
       <div className="container">
         <div className={styles.top}>
           <Link to="/" className={styles.logo}>
@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
           </a>
 
           <div className={styles.social}>
-            <ul className="social-links">
+            <ul className="socialLinks">
               <li>
                 <a
                   href="https://www.instagram.com"
@@ -83,6 +83,6 @@ export const Header: React.FC = () => {
           <img className={styles.decorCar} width="814" height="462" src={decorCar} alt="car" />
         </div>
       </div>
-    </div>
+    </header>
   );
 };

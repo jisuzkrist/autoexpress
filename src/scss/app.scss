@@ -1,17 +1,42 @@
 @import "./normalize";
 @import "./mixins";
 
-.button,
-.motto,
+a:focus,
+a:active {
+  outline: 1px solid $white;
+}
+
 .title,
-.subtitle {
+.sectionTitle,
+.motto,
+.button {
   text-transform: uppercase;
 }
 
+// Titles
 .title {
-  font-size: 72px;
-  line-height: 107px;
+  @include titleFont;
 }
+
+.sectionTitle {
+  @include sectionTitleFont;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: $dark-purple;
+    position: absolute;
+    top: 25px;
+    margin: 0 0 0 20px;
+  }
+}
+
+.contentTitle {
+  @include contentTitleFont;
+}
+// (end of) Titles
 
 .motto {
   font-size: 36px;
@@ -19,32 +44,57 @@
 }
 
 .button {
-  @include flexbox();
-  justify-content: center;
+  @include flexboxInline;
   align-items: center;
+  text-align: center;
   background-color: $purple;
-  width: 250px;
-  height: 50px;
+  padding: 14px 54px 15px;
+  color: $white;
   font-size: 14px;
   line-height: 21px;
   transition: all 0.5s;
+  position: relative;
 
-  &:hover {
-    color: $purple;
-    background-color: $white;
-  }
-
+  &:hover,
   &:focus,
   &:active {
-    outline: none;
     color: $purple;
     background-color: $white;
+    outline: none;
+  }
+
+  &OnBrightBG {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $purple;
+      background-color: $white;
+      outline: 1px solid $purple;
+    }
+  }
+
+  &Decor {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: $grey;
+      right: -75px;
+    }
+
+    &::after {
+      content: "Жми";
+      position: absolute;
+      color: $grey;
+      right: -110px;
+    }
   }
 }
 
-.social-links {
+.socialLinks {
   width: 125px;
-  @include flexbox();
+  @include flexbox;
   align-items: center;
   flex-wrap: wrap;
 

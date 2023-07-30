@@ -13,13 +13,8 @@
 
   padding: 47px 0 0;
 
-  a:focus,
-  a:active {
-    outline: 1px solid $white;
-  }
-
   .top {
-    @include flexbox();
+    @include flexbox;
     justify-content: space-between;
     align-items: center;
 
