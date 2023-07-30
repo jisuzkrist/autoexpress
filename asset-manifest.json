@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/autoexpress/static/css/main.500827d6.css",
-    "main.js": "/autoexpress/static/js/main.925a0f95.js",
+    "main.css": "/autoexpress/static/css/main.7e3b7872.css",
+    "main.js": "/autoexpress/static/js/main.003991e7.js",
     "static/media/header-car.png": "/autoexpress/static/media/header-car.63a872b4c4d2616f3d5c.png",
     "static/media/header.jpg": "/autoexpress/static/media/header.b2c154f273d78baaf57c.jpg",
+    "static/media/benefits-car.png": "/autoexpress/static/media/benefits-car.34d04d7c7f3e09a09b32.png",
     "static/media/logo.svg": "/autoexpress/static/media/logo.35162068ae6860e41b4f5ec3574d87e4.svg",
     "static/media/whatsapp.svg": "/autoexpress/static/media/whatsapp.af23b8b19705173bb095920b6896010c.svg",
     "static/media/instagram.svg": "/autoexpress/static/media/instagram.d33ac0a7232a44a8d7bd862bf7171bb6.svg",
     "static/media/facebook.svg": "/autoexpress/static/media/facebook.88a7ff5f04ccebc9e3ee54d313e55c75.svg",
     "static/media/telegram.svg": "/autoexpress/static/media/telegram.598a71a55b33c74feb932075fdb2e43c.svg",
     "index.html": "/autoexpress/index.html",
-    "main.500827d6.css.map": "/autoexpress/static/css/main.500827d6.css.map",
-    "main.925a0f95.js.map": "/autoexpress/static/js/main.925a0f95.js.map"
+    "main.7e3b7872.css.map": "/autoexpress/static/css/main.7e3b7872.css.map",
+    "main.003991e7.js.map": "/autoexpress/static/js/main.003991e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.500827d6.css",
-    "static/js/main.925a0f95.js"
+    "static/css/main.7e3b7872.css",
+    "static/js/main.003991e7.js"
   ]
 }
