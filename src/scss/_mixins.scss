@@ -54,4 +54,16 @@
   line-height: 36px;
   color: $black;
 }
+
+@mixin itemNumFont {
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 400;
+}
+
+@mixin itemNumTitleFont {
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: lowercase;
+}
 // (end of) Titles font

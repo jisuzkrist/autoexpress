@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.root {
+  .inner {
+    @include flexbox;
+    color: $white;
+
+    .content {
+      margin: 0 0 0 95px;
+      flex-basis: 100%;
+
+      .benefitsTitle {
+        margin: 0 0 0 185px;
+      }
+
+      .benefitsList {
+        background-color: $dark-purple;
+        padding: 23px 284px 45px 185px;
+        margin: 50px 0 0;
+
+        .item {
+          &Num {
+            @include itemNumFont;
+          }
+
+          &Title {
+            @include itemNumTitleFont;
+          }
+
+          &Text {
+            @include defaultFont;
+          }
+        }
+      }
+    }
+  }
+}

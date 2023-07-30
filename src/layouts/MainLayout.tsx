@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 // Components
 import { Header } from "../components/Header";
 import { Services } from "../components/Services";
+import { Benefits } from "../components/Benefits";
 // (end of) Components
 
 const MainLayout: React.FC = () => {
@@ -13,6 +14,7 @@ const MainLayout: React.FC = () => {
     <div>
       <Header />
       <Services />
+      <Benefits />
       <Outlet />
     </div>
   );

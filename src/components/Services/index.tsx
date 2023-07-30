@@ -2,11 +2,6 @@
 import React from "react";
 // (end of) Libraries
 
-// Images
-// import decorCar from "../../assets/img/decor/header-car.png";
-
-// (end of) Images
-
 // Styles
 import styles from "./Services.module.scss";
 // (end of) Styles
