@@ -7,6 +7,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Services } from "../components/Services";
 import { Benefits } from "../components/Benefits";
+import { Carousel } from "../components/Carousel";
 // (end of) Components
 
 const MainLayout: React.FC = () => {
@@ -15,6 +16,7 @@ const MainLayout: React.FC = () => {
       <Header />
       <Services />
       <Benefits />
+      <Carousel />
       <Outlet />
     </div>
   );
