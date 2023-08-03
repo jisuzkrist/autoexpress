@@ -1,0 +1,30 @@
+@import "../../scss/mixins";
+
+.root {
+  .inner {
+    .list {
+      @include flexbox;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .item {
+        padding-right: 10px;
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+
+        .link {
+          @include flexbox;
+        }
+
+        .svg {
+          path {
+            // Icon color
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+}

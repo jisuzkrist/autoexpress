@@ -1,0 +1,15 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.root {
+  background-color: $dark-purple;
+  color: $white;
+
+  .inner {
+    @include flexbox;
+    @include defaultFont;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+  }
+}

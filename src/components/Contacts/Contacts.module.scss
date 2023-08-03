@@ -1,0 +1,69 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.root {
+  margin: 0 0 50px;
+
+  .inner {
+    @include flexbox;
+    @include defaultFont;
+    justify-content: space-between;
+
+    .info {
+      padding: 50px 0;
+
+      .contactsList {
+        margin: 50px 0 0;
+
+        .item {
+          margin: 0 0 20px;
+
+          &Title {
+            color: $purple;
+          }
+        }
+      }
+    }
+
+    .contactsForm {
+      @include flexbox;
+      flex-direction: column;
+      flex-basis: 50%;
+
+      background-color: $dark-purple;
+      padding: 50px 75px 57px;
+
+      .title {
+        margin: 0 0 16px 53px;
+        color: $white;
+      }
+
+      .inputs {
+        @include flexbox;
+        @include defaultFont;
+        flex-direction: column;
+
+        .input {
+          @include defaultFont;
+          color: $white;
+          text-align: center;
+          padding: 24px;
+          border: 1px solid $white;
+          margin: 0 0 12px;
+
+          &::placeholder {
+            text-align: center;
+            @include defaultFont;
+            color: $grey;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            border: 1px solid $purple;
+          }
+        }
+      }
+    }
+  }
+}

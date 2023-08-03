@@ -5,19 +5,44 @@
   margin: 100px 0;
 
   .inner {
-    margin: 50px 0 0;
+    margin: 50px -7px 0;
+    padding: 0 0 50px;
+
     .item {
       &Box {
+        margin: 0 7px;
+        padding: 6px 6px 16px;
+        background-color: $white;
+        border: 1px solid $grey;
+        @include flexbox;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s;
+
         .itemImg {
+          max-width: 100%;
         }
 
         .itemTitle {
           @include contentTitleFont;
           color: $black;
           text-transform: uppercase;
+          margin: 23px auto 5px;
         }
 
         .itemText {
+          @include defaultFont;
+          margin: 0 auto;
+        }
+
+        &:hover {
+          background-color: $purple;
+          border: 1px solid $purple;
+          color: $white;
+
+          .itemTitle {
+            color: $white;
+          }
         }
       }
     }

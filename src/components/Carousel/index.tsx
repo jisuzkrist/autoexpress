@@ -1,5 +1,6 @@
 // Libraries
 import React from "react";
+import Slider from "react-slick";
 // (end of) Libraries
 
 // Images
@@ -13,85 +14,102 @@ import styles from "./Carousel.module.scss";
 // (end of) Styles
 
 export const Carousel: React.FC = () => {
+  const settings = {
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className={styles.root}>
       <div className="container">
         <h2 className="sectionTitle">Пригнанные нами авто</h2>
 
-        <div className={styles.inner}>
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
+        <div className={`${styles.inner} carousel`}>
+          <Slider {...settings}>
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
-              <p className={styles.itemText}>Экономия 4500 &#36;</p>
+                <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
+                <p className={styles.itemText}>Экономия 4500 &#36;</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={LexusES} alt="carousel car" />
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={LexusES} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
-              <p className={styles.itemText}>Экономия 5500 &#36;</p>
+                <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
+                <p className={styles.itemText}>Экономия 5500 &#36;</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
-              <p className={styles.itemText}>Экономия 5500 &#36;</p>
+                <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
+                <p className={styles.itemText}>Экономия 5500 &#36;</p>
+              </div>
             </div>
-          </div>
 
-          {/* Cars repeat */}
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
+            {/* Cars repeat */}
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
-              <p className={styles.itemText}>Экономия 4500 &#36;</p>
+                <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
+                <p className={styles.itemText}>Экономия 4500 &#36;</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={LexusES} alt="carousel car" />
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={LexusES} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
-              <p className={styles.itemText}>Экономия 5500 &#36;</p>
+                <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
+                <p className={styles.itemText}>Экономия 5500 &#36;</p>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
+            <div className={styles.item}>
+              <div className={styles.itemBox}>
+                <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
 
-              <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
-              <p className={styles.itemText}>Экономия 5500 &#36;</p>
+                <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
+                <p className={styles.itemText}>Экономия 5500 &#36;</p>
+              </div>
             </div>
-          </div>
-
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
-
-              <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
-              <p className={styles.itemText}>Экономия 4500 &#36;</p>
-            </div>
-          </div>
-
-          <div className={styles.item}>
-            <div className={styles.itemBox}>
-              <img className={styles.itemImg} src={LexusES} alt="carousel car" />
-
-              <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
-              <p className={styles.itemText}>Экономия 5500 &#36;</p>
-            </div>
-          </div>
-          {/* (end of) Cars repeat */}
+            {/* (end of) Cars repeat */}
+          </Slider>
         </div>
       </div>
     </section>

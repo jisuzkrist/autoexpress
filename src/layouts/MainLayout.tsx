@@ -8,6 +8,8 @@ import { Header } from "../components/Header";
 import { Services } from "../components/Services";
 import { Benefits } from "../components/Benefits";
 import { Carousel } from "../components/Carousel";
+import { Contacts } from "../components/Contacts";
+import { Footer } from "../components/Footer";
 // (end of) Components
 
 const MainLayout: React.FC = () => {
@@ -17,6 +19,8 @@ const MainLayout: React.FC = () => {
       <Services />
       <Benefits />
       <Carousel />
+      <Contacts />
+      <Footer />
       <Outlet />
     </div>
   );

@@ -1,5 +1,10 @@
 @import "./normalize";
-@import "./mixins";
+@import "./button";
+
+// Carousel
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+// (end of) Carousel
 
 a:focus,
 a:active {
@@ -8,8 +13,7 @@ a:active {
 
 .title,
 .sectionTitle,
-.motto,
-.button {
+.motto {
   text-transform: uppercase;
 }
 
@@ -31,6 +35,12 @@ a:active {
     top: 25px;
     margin: 0 0 0 20px;
   }
+
+  &OnDarkBG {
+    &::after {
+      background-color: $white;
+    }
+  }
 }
 
 .contentTitle {
@@ -43,66 +53,54 @@ a:active {
   line-height: 53px;
 }
 
-.button {
-  @include flexboxInline;
-  align-items: center;
-  text-align: center;
-  background-color: $purple;
-  padding: 14px 54px 15px;
-  color: $white;
-  font-size: 14px;
-  line-height: 21px;
-  transition: all 0.5s;
-  position: relative;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: $purple;
-    background-color: $white;
-    outline: none;
-  }
-
-  &OnBrightBG {
-    &:hover,
-    &:focus,
-    &:active {
-      color: $purple;
-      background-color: $white;
-      outline: 1px solid $purple;
-    }
-  }
-
-  &Decor {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 1px;
-      background-color: $grey;
-      right: -75px;
-    }
-
-    &::after {
-      content: "Жми";
-      position: absolute;
-      color: $grey;
-      right: -110px;
-    }
+.header,
+.footer {
+  .socialBlock {
+    padding: 70px 0 20px 66px;
+    width: 250px;
   }
 }
 
-.socialLinks {
-  width: 125px;
-  @include flexbox;
-  align-items: center;
-  flex-wrap: wrap;
+.contacts {
+  .buttonBlock {
+    margin: 78px auto 0;
 
-  li {
-    padding-right: 10px;
+    padding: 14px 73px 15px 72px;
+  }
+}
 
-    &:last-of-type {
-      padding-right: 0;
+.carousel {
+  .slick-dots {
+    bottom: -75px;
+
+    li {
+      margin: 0 30px;
+
+      button {
+        &::before {
+          content: "";
+          width: 50px;
+          height: 3px;
+          opacity: 1;
+          background-color: $grey;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          &::before {
+            background-color: $purple;
+          }
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }

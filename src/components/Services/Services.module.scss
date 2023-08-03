@@ -6,7 +6,8 @@
 
   .inner {
     margin: 50px 0 100px;
-    display: flex;
+    @include flexbox;
+    @include defaultFont;
 
     .content {
       margin: 0 95px 0 0;
@@ -62,6 +63,17 @@
           transition: all 0.5s;
         }
 
+        &:nth-child(n + 10) {
+          &::before {
+            content: counter(servicesCounter);
+          }
+        }
+
+        .itemTitle {
+          @include itemTitleFont;
+          transition: all 0.5s;
+        }
+
         &:hover {
           outline: 2px solid $purple;
           width: 100%;
@@ -70,11 +82,6 @@
           .itemTitle {
             color: $purple;
           }
-        }
-
-        .itemTitle {
-          @include itemTitleFont;
-          transition: all 0.5s;
         }
       }
     }

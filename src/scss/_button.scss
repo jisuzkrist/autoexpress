@@ -1,0 +1,62 @@
+.button {
+  position: relative;
+  @include flexboxInline;
+  align-items: center;
+  text-align: center;
+
+  @include buttonFont;
+  color: $white;
+  text-transform: uppercase;
+
+  button {
+    @include buttonFont;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  background-color: $purple;
+  padding: 14px 54px 15px 55px;
+
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &.decor {
+    &::before {
+      content: "";
+      position: absolute;
+      right: -75px;
+      width: 80px;
+      height: 1px;
+
+      background-color: $grey;
+    }
+
+    &::after {
+      content: "Жми";
+      position: absolute;
+      right: -110px;
+
+      color: $grey;
+    }
+  }
+
+  &:hover {
+    color: $purple;
+
+    background-color: $white;
+    outline: none;
+
+    button {
+      color: $purple;
+    }
+  }
+
+  &.onBrightBG {
+    &:hover {
+      color: $purple;
+
+      background-color: $white;
+      outline: 1px solid $purple;
+    }
+  }
+}

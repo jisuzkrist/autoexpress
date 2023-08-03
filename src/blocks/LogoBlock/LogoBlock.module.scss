@@ -1,0 +1,21 @@
+@import "../../scss/mixins";
+
+.root {
+  .inner {
+    .link {
+      @include flexbox;
+
+      .svg {
+        path {
+          // Letters color
+          fill: white;
+
+          // Horizontal lines color
+          &:nth-child(n + 2) {
+            stroke: white;
+          }
+        }
+      }
+    }
+  }
+}

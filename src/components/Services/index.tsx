@@ -2,6 +2,10 @@
 import React from "react";
 // (end of) Libraries
 
+// Blocks
+import { ButtonBlockLink } from "../../blocks/ButtonBlock/ButtonBlockLink";
+// (end of) Blocks
+
 // Styles
 import styles from "./Services.module.scss";
 // (end of) Styles
@@ -47,12 +51,13 @@ export const Services: React.FC = () => {
               </div>
             </div>
 
-            <a
-              className="button buttonOnBrightBG buttonDecor"
+            <ButtonBlockLink
+              className="onBrightBG decor"
+              link="/"
+              text="Консультация эксперта"
               title="Консультация эксперта"
-              href="#">
-              Консультация эксперта
-            </a>
+              type={undefined}
+            />
           </div>
 
           <ol className={styles.servicesList}>
