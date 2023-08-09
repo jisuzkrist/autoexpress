@@ -2,12 +2,10 @@
 @import "../../scss/mixins";
 
 .root {
-  padding: 300px 0 0;
-
   .inner {
-    margin: 50px 0 100px;
     @include flexbox;
-    @include defaultFont;
+
+    margin: 0 0 100px;
 
     .content {
       margin: 0 95px 0 0;
@@ -20,10 +18,16 @@
           margin: 0 0 50px;
         }
 
-        .textBox {
-          margin: 12px 0 0;
+        .title {
+          color: $purple;
+          display: inline-block;
+          margin-bottom: 12px;
+        }
 
+        .textBox {
           .text {
+            @include defaultFont;
+
             margin: 0 0 12px;
 
             &:last-of-type {
@@ -39,6 +43,7 @@
       counter-reset: servicesCounter;
 
       .item {
+        @include defaultFont;
         counter-increment: servicesCounter;
         outline: 1px solid $grey;
         margin: 0 0 12px;
@@ -69,8 +74,9 @@
           }
         }
 
-        .itemTitle {
-          @include itemTitleFont;
+        .title {
+          @include title24Font;
+
           transition: all 0.5s;
         }
 
@@ -78,8 +84,11 @@
           outline: 2px solid $purple;
           width: 100%;
 
-          &::before,
-          .itemTitle {
+          &::before {
+            color: $purple;
+          }
+
+          .title {
             color: $purple;
           }
         }

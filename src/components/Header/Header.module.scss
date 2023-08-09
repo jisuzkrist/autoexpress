@@ -4,13 +4,15 @@
 .root {
   background-color: $dark-purple;
   background-image: url(../../assets/img/bg/header.jpg);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
 
-  min-height: 700px;
   color: $white;
 
+  min-height: 700px;
+
+  margin-bottom: 300px;
   padding: 47px 0 0;
 
   .top {
@@ -18,26 +20,51 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 105px;
+
     .phone {
-      font-size: 36px;
-      line-height: 53px;
+      @include title36Font;
       font-weight: 400;
     }
   }
 
   .content {
     position: relative;
-    padding: 105px 0 0;
+
+    .title {
+      font-weight: 400;
+      @include title72Font;
+      text-transform: uppercase;
+    }
+
+    .motto {
+      display: inline-block;
+
+      color: $white;
+      @include title36Font;
+      text-transform: uppercase;
+
+      margin-bottom: 30px;
+    }
 
     .text {
-      margin: 30px 0;
+      @include defaultFont;
+
       max-width: 762px;
+
+      margin-bottom: 30px;
     }
 
-    .decorCar {
-      position: absolute;
-      top: 338px;
-      right: 0;
+    :global .socialBlock {
+      width: 250px;
+
+      margin: 70px 0 20px 66px;
     }
+  }
+
+  .decorCar {
+    position: absolute;
+    right: 0;
+    top: 338px;
   }
 }

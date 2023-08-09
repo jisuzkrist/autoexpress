@@ -58,7 +58,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
+                <h4 className={styles.title}>Infiniti QX50 2016 г.</h4>
                 <p className={styles.itemText}>Экономия 4500 &#36;</p>
               </div>
             </div>
@@ -67,7 +67,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={LexusES} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
+                <h4 className={styles.title}>Lexus ES 2013 г.</h4>
                 <p className={styles.itemText}>Экономия 5500 &#36;</p>
               </div>
             </div>
@@ -76,7 +76,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
+                <h4 className={styles.title}>Tesla Model 3 2018 г.</h4>
                 <p className={styles.itemText}>Экономия 5500 &#36;</p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={InfinityQX50} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Infiniti QX50 2016 г.</h4>
+                <h4 className={styles.title}>Infiniti QX50 2016 г.</h4>
                 <p className={styles.itemText}>Экономия 4500 &#36;</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={LexusES} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Lexus ES 2013 г.</h4>
+                <h4 className={styles.title}>Lexus ES 2013 г.</h4>
                 <p className={styles.itemText}>Экономия 5500 &#36;</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export const Carousel: React.FC = () => {
               <div className={styles.itemBox}>
                 <img className={styles.itemImg} src={TeslaModel3} alt="carousel car" />
 
-                <h4 className={styles.itemTitle}>Tesla Model 3 2018 г.</h4>
+                <h4 className={styles.title}>Tesla Model 3 2018 г.</h4>
                 <p className={styles.itemText}>Экономия 5500 &#36;</p>
               </div>
             </div>

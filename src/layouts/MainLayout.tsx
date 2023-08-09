@@ -5,23 +5,23 @@ import { Outlet } from "react-router-dom";
 
 // Components
 import { Header } from "../components/Header";
-import { Services } from "../components/Services";
-import { Benefits } from "../components/Benefits";
-import { Carousel } from "../components/Carousel";
-import { Contacts } from "../components/Contacts";
 import { Footer } from "../components/Footer";
 // (end of) Components
 
+// Styles
+import styles from "./MainLayout.module.scss";
+// (end of) Styles
+
 const MainLayout: React.FC = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <Header />
-      <Services />
-      <Benefits />
-      <Carousel />
-      <Contacts />
+
+      <div className={styles.main}>
+        <Outlet />
+      </div>
+
       <Footer />
-      <Outlet />
     </div>
   );
 };

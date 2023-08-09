@@ -1,7 +1,7 @@
 @mixin flexbox {
-  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: -webkit-flex;
 
   display: flex;
@@ -9,10 +9,10 @@
 }
 
 @mixin flexboxInline {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: -moz-inline-box;
   display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
 
   display: inline-flex;
   font-size: 0;
@@ -21,8 +21,8 @@
 // Default font
 @mixin defaultFont {
   font-family: "Oswald", sans-serif;
-  font-weight: 300;
   font-size: 18px;
+  font-weight: 300;
   line-height: 27px;
 }
 // (end of) Default font
@@ -41,39 +41,18 @@
 // (end of) Button font
 
 // Titles font
-@mixin titleFont {
+@mixin title72Font {
   font-size: 72px;
   line-height: 107px;
 }
 
-@mixin sectionTitleFont {
+@mixin title36Font {
   font-size: 36px;
   line-height: 53px;
-  color: $dark-purple;
 }
 
-@mixin contentTitleFont {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-  color: $purple;
-}
-
-@mixin itemTitleFont {
+@mixin title24Font {
   font-size: 24px;
   line-height: 36px;
-  color: $black;
-}
-
-@mixin itemNumFont {
-  font-size: 36px;
-  line-height: 53px;
-  font-weight: 400;
-}
-
-@mixin itemNumTitleFont {
-  font-size: 24px;
-  line-height: 36px;
-  text-transform: lowercase;
 }
 // (end of) Titles font

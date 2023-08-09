@@ -18,30 +18,30 @@ export const Benefits: React.FC = () => {
           <img className={styles.decorCar} width="320" height="606" src={decorCar} alt="car" />
 
           <div className={styles.content}>
-            <h2 className={`${styles.benefitsTitle} sectionTitle`}>Почему мы?</h2>
+            <h2 className={`sectionTitle ${styles.title}`}>Почему мы?</h2>
 
             <ul className={styles.benefitsList}>
               <li className={styles.item}>
-                <p className={styles.itemNum}>650</p>
-                <p className={styles.itemTitle}>Успешно доставленных авто</p>
-                <p className={styles.itemText}>
+                <p className={styles.numTitle}>650</p>
+                <p className={styles.textTitle}>Успешно доставленных авто</p>
+                <p className={styles.text}>
                   Большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны на
                   100%
                 </p>
               </li>
 
               <li className={styles.item}>
-                <p className={styles.itemNum}>5</p>
-                <p className={styles.itemTitle}>Лет на рынке Украины</p>
-                <p className={styles.itemText}>
+                <p className={styles.numTitle}>5</p>
+                <p className={styles.textTitle}>Лет на рынке Украины</p>
+                <p className={styles.text}>
                   Работаем по всей территории Украины, работаем по договору с клиентами
                 </p>
               </li>
 
               <li className={styles.item}>
-                <p className={styles.itemNum}>100 &#37;</p>
-                <p className={styles.itemTitle}>Доверия клиентов</p>
-                <p className={styles.itemText}>
+                <p className={styles.numTitle}>100 &#37;</p>
+                <p className={styles.textTitle}>Доверия клиентов</p>
+                <p className={styles.text}>
                   Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео
                   отчет
                 </p>

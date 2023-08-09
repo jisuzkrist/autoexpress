@@ -2,6 +2,8 @@
 @import "../../scss/mixins";
 
 .root {
+  margin-bottom: 100px;
+
   .inner {
     @include flexbox;
     color: $white;
@@ -10,25 +12,30 @@
       margin: 0 0 0 95px;
       flex-basis: 100%;
 
-      .benefitsTitle {
-        margin: 0 0 0 185px;
+      .title {
+        margin-left: 185px;
       }
 
       .benefitsList {
         background-color: $dark-purple;
         padding: 23px 284px 45px 185px;
-        margin: 50px 0 0;
 
         .item {
-          &Num {
-            @include itemNumFont;
+          margin-bottom: 20px;
+
+          .numTitle {
+            font-weight: 400px;
+            @include title36Font;
           }
 
-          &Title {
-            @include itemNumTitleFont;
+          .textTitle {
+            @include title24Font;
+            text-transform: lowercase;
+
+            margin-left: 0;
           }
 
-          &Text {
+          .text {
             @include defaultFont;
           }
         }

@@ -29,16 +29,16 @@ export const Header: React.FC = () => {
         </div>
 
         <div className={styles.content}>
-          <h1 className="title">Авто из США &#8220;под ключ&#8221;</h1>
+          <h1 className={styles.title}>Авто из США &#8220;под ключ&#8221;</h1>
 
-          <strong className="motto">Закажи себе авто из США с выгодой до 40&#37;</strong>
+          <strong className={styles.motto}>Закажи себе авто из США с выгодой до 40&#37;</strong>
 
           <p className={styles.text}>
             Подбор, покупка, доставка, растаможка, ремонт, оформление по договору
           </p>
 
           <ButtonBlockLink
-            className={""}
+            className=""
             link="/"
             text="Консультация эксперта"
             title="Консультация эксперта"

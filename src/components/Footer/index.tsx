@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
 
           <SocialBlock />
 
-          <Link to="/" className={styles.copy} title="Политика конфиденциальности">
+          <Link to="/privacy" className={styles.copy} title="Политика конфиденциальности">
             Политика конфиденциальности
           </Link>
         </div>

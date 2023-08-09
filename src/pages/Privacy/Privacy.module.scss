@@ -1,0 +1,95 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.root {
+  @include defaultFont;
+
+  p {
+    font-weight: 400;
+  }
+
+  ol {
+    margin: 30px 0;
+
+    li {
+      margin: 10px 0 0 10px;
+      padding-left: 30px;
+    }
+  }
+
+  .listA,
+  .listAA,
+  .listAAA {
+    .itemA,
+    .itemAA,
+    .itemAAA {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+      }
+
+      .title {
+        color: $purple;
+        @include title24Font;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      .link {
+        color: $purple;
+      }
+    }
+  }
+
+  .listA {
+    counter-reset: counterA;
+
+    .itemA {
+      counter-increment: counterA;
+
+      &::before {
+        content: counter(counterA);
+
+        left: -10px;
+
+        @include title24Font;
+        font-weight: 400;
+        color: $purple;
+      }
+    }
+
+    .listAA {
+      counter-reset: counterAA;
+
+      .itemAA {
+        @include title24Font;
+
+        counter-increment: counterAA;
+
+        &::before {
+          content: counter(counterA) "." counter(counterAA);
+
+          left: -10px;
+        }
+      }
+    }
+
+    .listAAA {
+      counter-reset: counterAAA;
+
+      .itemAAA {
+        @include defaultFont;
+
+        counter-increment: counterAAA;
+
+        &::before {
+          content: counter(counterA) "." counter(counterAA) "." counter(counterAAA);
+
+          left: -10px;
+        }
+      }
+    }
+  }
+}

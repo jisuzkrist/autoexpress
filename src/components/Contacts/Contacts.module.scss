@@ -2,24 +2,32 @@
 @import "../../scss/mixins";
 
 .root {
-  margin: 0 0 50px;
+  margin-bottom: 50px;
 
   .inner {
     @include flexbox;
-    @include defaultFont;
     justify-content: space-between;
 
     .info {
       padding: 50px 0;
 
       .contactsList {
-        margin: 50px 0 0;
-
         .item {
+          @include defaultFont;
+
           margin: 0 0 20px;
 
-          &Title {
+          .title {
             color: $purple;
+          }
+
+          .text {
+            .phone {
+              &:focus,
+              &:active {
+                outline: 1px solid $purple;
+              }
+            }
           }
         }
       }
@@ -33,14 +41,18 @@
       background-color: $dark-purple;
       padding: 50px 75px 57px;
 
-      .title {
-        margin: 0 0 16px 53px;
+      :global .sectionTitle {
         color: $white;
+        margin-bottom: 16px;
+        margin-left: 53px;
+
+        &::after {
+          background-color: $white;
+        }
       }
 
       .inputs {
         @include flexbox;
-        @include defaultFont;
         flex-direction: column;
 
         .input {
@@ -63,6 +75,12 @@
             border: 1px solid $purple;
           }
         }
+      }
+
+      :global .buttonBlock {
+        margin: 78px auto 0;
+
+        padding: 14px 73px 15px 72px;
       }
     }
   }

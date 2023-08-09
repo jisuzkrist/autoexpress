@@ -11,20 +11,16 @@ a:active {
   outline: 1px solid $white;
 }
 
-.title,
-.sectionTitle,
-.motto {
-  text-transform: uppercase;
-}
-
 // Titles
-.title {
-  @include titleFont;
-}
-
 .sectionTitle {
-  @include sectionTitleFont;
   position: relative;
+
+  color: $dark-purple;
+  font-weight: 400;
+  @include title36Font;
+  text-transform: uppercase;
+
+  margin-bottom: 50px;
 
   &::after {
     content: "";
@@ -35,39 +31,8 @@ a:active {
     top: 25px;
     margin: 0 0 0 20px;
   }
-
-  &OnDarkBG {
-    &::after {
-      background-color: $white;
-    }
-  }
-}
-
-.contentTitle {
-  @include contentTitleFont;
 }
 // (end of) Titles
-
-.motto {
-  font-size: 36px;
-  line-height: 53px;
-}
-
-.header,
-.footer {
-  .socialBlock {
-    padding: 70px 0 20px 66px;
-    width: 250px;
-  }
-}
-
-.contacts {
-  .buttonBlock {
-    margin: 78px auto 0;
-
-    padding: 14px 73px 15px 72px;
-  }
-}
 
 .carousel {
   .slick-dots {

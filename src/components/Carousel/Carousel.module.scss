@@ -2,10 +2,12 @@
 @import "../../scss/mixins";
 
 .root {
-  margin: 100px 0;
+  margin-bottom: 100px;
 
   .inner {
-    margin: 50px -7px 0;
+    margin-left: -7px;
+    margin-right: -7px;
+
     padding: 0 0 50px;
 
     .item {
@@ -17,14 +19,14 @@
         @include flexbox;
         flex-direction: column;
         align-items: center;
+
         transition: all 0.5s;
 
         .itemImg {
           max-width: 100%;
         }
 
-        .itemTitle {
-          @include contentTitleFont;
+        .title {
           color: $black;
           text-transform: uppercase;
           margin: 23px auto 5px;
@@ -40,8 +42,10 @@
           border: 1px solid $purple;
           color: $white;
 
-          .itemTitle {
+          .title {
             color: $white;
+
+            transition: all 0.5s;
           }
         }
       }

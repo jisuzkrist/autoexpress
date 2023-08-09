@@ -19,7 +19,7 @@ export const Services: React.FC = () => {
         <div className={styles.inner}>
           <div className={styles.content}>
             <div className={styles.contentBox}>
-              <h3 className="contentTitle">Почему ввоз авто из США?</h3>
+              <h3 className={styles.title}>Почему ввоз авто из США?</h3>
 
               <div className={styles.textBox}>
                 <p className={styles.text}>
@@ -38,7 +38,7 @@ export const Services: React.FC = () => {
             </div>
 
             <div className={styles.contentBox}>
-              <h3 className="contentTitle">Из-за чего такая низкая цена?</h3>
+              <h3 className={styles.title}>Из-за чего такая низкая цена?</h3>
 
               <div className={styles.textBox}>
                 <p className={styles.text}>
@@ -62,27 +62,27 @@ export const Services: React.FC = () => {
 
           <ol className={styles.servicesList}>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Покупка авто</p>
+              <p className={styles.title}>Покупка авто</p>
               <p className={styles.itemText}>Подбор автомобиля и экспертная проверка</p>
             </li>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Доставка морем</p>
+              <p className={styles.title}>Доставка морем</p>
               <p className={styles.itemText}>Расчет оптимальной стоимости доставки авто</p>
             </li>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Растаможка авто</p>
+              <p className={styles.title}>Растаможка авто</p>
               <p className={styles.itemText}>Прохождение таможенного оформления (2-3 дня)</p>
             </li>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Ремонт авто</p>
+              <p className={styles.title}>Ремонт авто</p>
               <p className={styles.itemText}>Комплексный ремонт автомобиля на СТО</p>
             </li>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Сертификация</p>
+              <p className={styles.title}>Сертификация</p>
               <p className={styles.itemText}>Услуга предоставляется по желанию</p>
             </li>
             <li className={styles.item}>
-              <p className={styles.itemTitle}>Постановка на учет</p>
+              <p className={styles.title}>Постановка на учет</p>
               <p className={styles.itemText}>Оформление автомобиля в Украине</p>
             </li>
           </ol>
