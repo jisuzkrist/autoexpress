@@ -23,18 +23,30 @@
         transition: all 0.5s;
 
         .itemImg {
-          max-width: 100%;
+          width: 100%;
         }
 
         .title {
           color: $black;
           text-transform: uppercase;
+
           margin: 23px auto 5px;
+
+          @include tablet {
+            @include title24Font;
+
+            margin: 23px auto 0px;
+          }
         }
 
         .itemText {
           @include defaultFont;
           margin: 0 auto;
+
+          @include tablet {
+            font-size: 20px;
+            line-height: 24px;
+          }
         }
 
         &:hover {

@@ -11,6 +11,20 @@
     .info {
       padding: 50px 0;
 
+      @include tablet {
+        padding: 25px 0;
+      }
+
+      :global .sectionTitle {
+        margin-bottom: 25px;
+
+        &::after {
+          @include tablet {
+            width: 45px;
+          }
+        }
+      }
+
       .contactsList {
         .item {
           @include defaultFont;
@@ -41,6 +55,12 @@
       background-color: $dark-purple;
       padding: 50px 75px 57px;
 
+      @include tablet {
+        flex-basis: 60%;
+
+        padding: 25px 40px 40px 50px;
+      }
+
       :global .sectionTitle {
         color: $white;
         margin-bottom: 16px;
@@ -50,11 +70,19 @@
           margin-left: 23px;
         }
 
+        @include tablet {
+          margin-left: 15px;
+        }
+
         &::after {
           background-color: $white;
 
           @include laptop {
             width: 65px;
+          }
+
+          @include tablet {
+            width: 45px;
           }
         }
       }
@@ -70,6 +98,10 @@
           padding: 24px;
           border: 1px solid $white;
           margin: 0 0 12px;
+
+          @include tablet {
+            padding: 18px;
+          }
 
           &::placeholder {
             text-align: center;
@@ -89,6 +121,10 @@
         margin: 78px auto 0;
 
         padding: 14px 73px 15px 72px;
+
+        @include tablet {
+          margin: 40px auto 0;
+        }
       }
     }
   }

@@ -47,7 +47,9 @@ export const Header: React.FC = () => {
 
           <SocialBlock />
 
-          <img className={styles.decorCar} width="814" height="462" src={decorCar} alt="car" />
+          <div className={styles.decorCar}>
+            <img className={styles.img} src={decorCar} alt="car" />
+          </div>
         </div>
       </div>
     </header>

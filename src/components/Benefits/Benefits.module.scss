@@ -8,15 +8,34 @@
     @include flexbox;
     color: $white;
 
+    .decorCar {
+      @include tablet {
+        max-width: 230px;
+        flex-basis: 100%;
+      }
+
+      .img {
+        max-width: 100%;
+      }
+    }
+
     .content {
       margin: 0 0 0 95px;
       flex-basis: 100%;
+
+      @include tablet {
+        margin-left: 30px;
+      }
 
       .title {
         margin-left: 185px;
 
         @include laptop {
           margin-left: 140px;
+        }
+
+        @include tablet {
+          margin-left: 90px;
         }
       }
 
@@ -26,6 +45,10 @@
 
         @include laptop {
           padding: 23px 155px 45px 140px;
+        }
+
+        @include tablet {
+          padding: 23px 100px 30px 90px;
         }
 
         .item {

@@ -7,6 +7,10 @@
 
     margin: 0 0 100px;
 
+    @include tablet {
+      flex-direction: column;
+    }
+
     .content {
       margin: 0 95px 0 0;
       flex-basis: 50%;
@@ -46,6 +50,12 @@
       flex-basis: 50%;
       counter-reset: servicesCounter;
 
+      @include tablet {
+        order: -1;
+
+        margin-bottom: 50px;
+      }
+
       .item {
         @include defaultFont;
         counter-increment: servicesCounter;
@@ -59,6 +69,11 @@
         @include laptop {
           width: 95%;
           padding-left: 80px;
+        }
+
+        @include tablet {
+          width: 90%;
+          padding-left: 130px;
         }
 
         &:last-of-type {

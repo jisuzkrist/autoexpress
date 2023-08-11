@@ -15,8 +15,9 @@ export const Benefits: React.FC = () => {
     <section className={styles.root}>
       <div className="container">
         <div className={styles.inner}>
-          <img className={styles.decorCar} width="320" height="606" src={decorCar} alt="car" />
-
+          <div className={styles.decorCar}>
+            <img className={styles.img} src={decorCar} alt="car" />
+          </div>
           <div className={styles.content}>
             <h2 className={`sectionTitle ${styles.title}`}>Почему мы?</h2>
 
