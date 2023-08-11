@@ -46,8 +46,16 @@
         margin-bottom: 16px;
         margin-left: 53px;
 
+        @include laptop {
+          margin-left: 23px;
+        }
+
         &::after {
           background-color: $white;
+
+          @include laptop {
+            width: 65px;
+          }
         }
       }
 

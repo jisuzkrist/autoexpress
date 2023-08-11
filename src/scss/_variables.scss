@@ -1,10 +1,15 @@
+$mw: 360px;
+
 // Breakpoints
-$mw: 1080;
-$xs: 575.98;
-$sm: 767.98;
-$md: 991.98;
-$lg: 1199.98;
-$xl: 1399.98;
+$minimum: 479px; // < 480px
+$mobile: 767px; // min = 480px 📱
+
+$tablet: 1023px; // min = 768px
+
+$laptop: 1279px; // min = 1024px 💻
+$desktop: 1439px; // min = 1280px 🙂 Default styles look good
+
+$maximum: 1440px; // min = 1440px 🙂 Default styles look good
 // (end of) Breakpoints
 
 // Colors
@@ -18,6 +23,5 @@ $purple: #5a0d67;
 
 $bgcolor: $white;
 $color: $black;
-$min-width: 320px;
 
 $container-width: 1200px;

@@ -42,7 +42,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  min-width: $min-width;
+  min-width: $mw;
   position: relative;
 }
 
@@ -60,7 +60,28 @@ body {
 
 .container {
   max-width: $container-width;
+
   margin: 0 auto;
+
+  @include laptop {
+    min-width: 954px;
+    margin: 0 25px;
+  }
+
+  @include tablet {
+    min-width: 398px;
+    margin: 0 25px;
+  }
+
+  @include mobile {
+    min-width: 430px;
+    margin: 0 25px;
+  }
+
+  @include minimum {
+    min-width: 310px;
+    margin: 0 25px;
+  }
 }
 
 h1,

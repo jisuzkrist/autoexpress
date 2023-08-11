@@ -11,6 +11,10 @@
       margin: 0 95px 0 0;
       flex-basis: 50%;
 
+      @include laptop {
+        margin: 0 55px 0 0;
+      }
+
       &Box {
         margin: 0 0 69px;
 
@@ -51,6 +55,11 @@
         position: relative;
         width: 90%;
         transition: all 0.5s;
+
+        @include laptop {
+          width: 95%;
+          padding-left: 80px;
+        }
 
         &:last-of-type {
           margin: 0;

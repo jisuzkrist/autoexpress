@@ -14,11 +14,19 @@
 
       .title {
         margin-left: 185px;
+
+        @include laptop {
+          margin-left: 140px;
+        }
       }
 
       .benefitsList {
         background-color: $dark-purple;
         padding: 23px 284px 45px 185px;
+
+        @include laptop {
+          padding: 23px 155px 45px 140px;
+        }
 
         .item {
           margin-bottom: 20px;

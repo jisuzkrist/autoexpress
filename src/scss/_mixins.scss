@@ -1,3 +1,41 @@
+// Breakpoints
+@mixin maximum {
+  @media (min-width: $maximum) {
+    @content; // min = 1440px 🙂 Default styles look good
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content; // min = 1280px 🙂 Default styles look good
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content; // min = 1024px 💻
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content; // min = 768px
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content; // min = 480px 📱
+  }
+}
+
+@mixin minimum {
+  @media (max-width: $minimum) {
+    @content; // < 480px
+  }
+}
+// (end of) Breakpoints
+
 @mixin flexbox {
   display: -moz-box;
   display: -ms-flexbox;
