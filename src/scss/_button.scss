@@ -29,6 +29,10 @@
       height: 1px;
 
       background-color: $grey;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     &::after {
@@ -37,6 +41,10 @@
       right: -110px;
 
       color: $grey;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
 

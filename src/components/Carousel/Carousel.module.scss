@@ -13,6 +13,10 @@
       @include mobile {
         width: 45px;
       }
+
+      @include minimum {
+        display: none;
+      }
     }
   }
 

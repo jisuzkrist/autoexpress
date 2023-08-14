@@ -19,6 +19,12 @@
         margin: 0 55px 0 0;
       }
 
+      @include minimum {
+        text-align: center;
+
+        margin: 0;
+      }
+
       &Box {
         margin: 0 0 69px;
 

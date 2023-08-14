@@ -51,6 +51,14 @@
         }
       }
 
+      :global .sectionTitle {
+        &::after {
+          @include minimum {
+            width: 50px;
+          }
+        }
+      }
+
       .benefitsList {
         background-color: $dark-purple;
         padding: 23px 284px 45px 185px;
