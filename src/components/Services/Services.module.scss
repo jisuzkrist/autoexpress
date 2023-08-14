@@ -76,6 +76,11 @@
           padding-left: 130px;
         }
 
+        @include mobile {
+          width: 100%;
+          padding-left: 100px;
+        }
+
         &:last-of-type {
           margin: 0;
         }

@@ -30,13 +30,14 @@ export const Carousel: React.FC = () => {
           initialSlide: 2,
         },
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //   },
-      // },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
     ],
   };
 

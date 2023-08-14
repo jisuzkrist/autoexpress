@@ -11,8 +11,22 @@
     align-items: center;
     padding: 24px 0;
 
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+
+    :global .socialBlock {
+      @include mobile {
+        margin-bottom: 20px;
+      }
+    }
+
     .copy {
       @include defaultFont;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
   }
 }

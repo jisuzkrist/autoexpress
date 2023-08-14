@@ -4,6 +4,18 @@
 .root {
   margin-bottom: 100px;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
+  :global .sectionTitle {
+    &::after {
+      @include mobile {
+        width: 45px;
+      }
+    }
+  }
+
   .inner {
     margin-left: -7px;
     margin-right: -7px;

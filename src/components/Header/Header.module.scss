@@ -19,12 +19,26 @@
     margin-bottom: 280px;
   }
 
+  @include mobile {
+    margin-bottom: 80px;
+  }
+
   .top {
     @include flexbox;
     justify-content: space-between;
     align-items: center;
 
     margin-bottom: 105px;
+
+    @include mobile {
+      flex-direction: column;
+
+      margin-bottom: 50px;
+
+      :global .logoBlock {
+        margin-bottom: 30px;
+      }
+    }
 
     .phone {
       @include title36Font;
@@ -34,6 +48,10 @@
 
   .content {
     position: relative;
+
+    @include mobile {
+      text-align: center;
+    }
 
     .title {
       font-weight: 400;
@@ -72,12 +90,12 @@
     }
 
     :global .socialBlock {
-      width: 250px;
+      width: max-content;
 
       margin: 70px 0 20px 66px;
 
-      @include tablet {
-        width: 180px;
+      @include mobile {
+        margin: 40px auto;
       }
     }
   }
@@ -91,6 +109,10 @@
       top: 360px;
 
       max-width: 690px;
+    }
+
+    @include mobile {
+      position: static;
     }
 
     .img {

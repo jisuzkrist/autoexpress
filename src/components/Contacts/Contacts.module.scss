@@ -4,9 +4,17 @@
 .root {
   margin-bottom: 50px;
 
+  @include mobile {
+    text-align: center;
+  }
+
   .inner {
     @include flexbox;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
 
     .info {
       padding: 50px 0;
@@ -21,6 +29,10 @@
         &::after {
           @include tablet {
             width: 45px;
+          }
+
+          @include mobile {
+            width: 30px;
           }
         }
       }
@@ -74,6 +86,10 @@
           margin-left: 15px;
         }
 
+        @include mobile {
+          margin-left: 0;
+        }
+
         &::after {
           background-color: $white;
 
@@ -83,6 +99,10 @@
 
           @include tablet {
             width: 45px;
+          }
+
+          @include mobile {
+            width: 30px;
           }
         }
       }
