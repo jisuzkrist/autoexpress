@@ -1,4 +1,4 @@
-![preview](./preview.jpg)
+![preview](./preview.png)
 
 ## ABOUT PROJECT
 
