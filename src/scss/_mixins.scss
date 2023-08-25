@@ -59,10 +59,15 @@
 // Default font
 @mixin defaultFont {
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
   font-weight: 300;
+  font-size: 18px;
   line-height: 27px;
 }
+@mixin defaultFontIncreased {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 // (end of) Default font
 
 // Button font
@@ -84,9 +89,19 @@
   line-height: 107px;
 }
 
+@mixin title72FontDecreased {
+  font-size: 65px;
+  line-height: 70px;
+}
+
 @mixin title36Font {
   font-size: 36px;
   line-height: 53px;
+}
+
+@mixin title36FontDecreased {
+  font-size: 30px;
+  line-height: 50px;
 }
 
 @mixin title24Font {

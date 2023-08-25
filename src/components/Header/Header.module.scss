@@ -59,8 +59,7 @@
       text-transform: uppercase;
 
       @include tablet {
-        font-size: 65px;
-        line-height: 70px;
+        @include title72FontDecreased;
 
         margin-bottom: 10px;
       }
@@ -76,8 +75,7 @@
       margin-bottom: 30px;
 
       @include tablet {
-        font-size: 30px;
-        line-height: 50px;
+        @include title36FontDecreased;
       }
     }
 
