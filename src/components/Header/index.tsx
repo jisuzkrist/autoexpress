@@ -2,15 +2,15 @@
 import React from "react";
 // (end of) Libraries
 
-// Images
-import decorCar from "../../assets/img/decor/header-car.png";
-// (end of) Images
-
 // Blocks
 import { ButtonBlockLink } from "../../blocks/ButtonBlock/ButtonBlockLink";
 import { LogoBlock } from "../../blocks/LogoBlock";
 import { SocialBlock } from "../../blocks/SocialBlock";
 // (end of) Blocks
+
+// Images
+import decorCar from "../../assets/img/decor/header-car.png";
+// (end of) Images
 
 // Styles
 import styles from "./Header.module.scss";
@@ -18,7 +18,7 @@ import styles from "./Header.module.scss";
 
 export const Header: React.FC = () => {
   return (
-    <header className={`header ${styles.root}`}>
+    <header className={styles.root}>
       <div className="container">
         <div className={styles.top}>
           <LogoBlock />

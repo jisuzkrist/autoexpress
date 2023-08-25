@@ -8,6 +8,8 @@ import styles from "./Privacy.module.scss";
 // (end of) Styles
 
 const Privacy: React.FC = () => {
+  window.scrollTo(0, 0);
+
   return (
     <div className={styles.root}>
       <div className="container">
